@@ -1,23 +1,20 @@
 import styled from 'styled-components'
-import Image from 'next/image'
 import Link from 'next/link'
+// import image1 from '../../public/images/currency.png'
 
-import sample from '../../public/images/data_analytics.png'
 
-const PlanCard = () => {
+const PlanCard = ({title, bgimg, price, perks }) => {
     return (
-        <Card>
-            {/* <BgImage>
-                <Image src={sample} placeholder="blur"/>
-            </BgImage> */}
-            <Title>Bronze</Title>
+        <Card img={bgimg}>
+            <Title>{title}</Title>
             <Perks>
-                <Perk>return 6%</Perk>
-                <Perk>every week</Perk>
-                <Perk>for 5 weeks</Perk>
-                <Perk>Total 30% + capital</Perk>
+                {
+                    perks.map(perk => (
+                        <Perk key={perks.indexOf(perk) + 1}>{perk}</Perk>
+                    ))
+                }
             </Perks>
-            <Price>$500</Price>
+            <Price>{price}</Price>
             <Link href="#">
                 <a >invest now</a>
             </Link>
@@ -30,41 +27,64 @@ export default PlanCard;
 const Card = styled.div`
     position: relative;
     overflow: hidden;
+    width: 100%;
+    background: var(--black-2);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
 
-    ::after{
+    &::after{
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url('../../public/images/data_analytics.png');
-        height: 200px;
-        width: 200px;
-        z-index: 999;
+        top: -100px;
+        right: -100px;
+        height: 300px;
+        width: 300px;
+        background-image: url(${props => props.img});
+        background-size: cover;
+        z-index: 1;
+    }
 
+    a{
+        padding: 10px;
+        text-decoration: none;
+        border: 2px solid var(--light-green);
+        color: var(--light-green);
+        text-transform: capitalize;
+        margin: 30px 0;
+        transition: all .3s ease;
+    }
+
+    a:hover{
+        background: var(--light-green);
+        color: var(--white);
     }
 `
 
-const BgImage = styled.div`
+const Title = styled.h4`
     position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-
-
-    /* img{
-        position: absolute;
-        top: -20px;
-        right: 0;
-        height: 200px;
-        width: 200px;
-    } */
+    margin-top: 45%;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    z-index: 2;
+    text-transform: capitalize;
 `
 
-const Title = styled.h4``
+const Perks = styled.ul`
+    list-style: none;
+    text-transform: capitalize;
+    /* margin-bottom: 30px; */
+`
 
-const Perks = styled.ul``
+const Perk = styled.li`
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+`
 
-const Perk = styled.li``
-
-const Price = styled.p``
+const Price = styled.p`
+    color: var(--light-green);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+`

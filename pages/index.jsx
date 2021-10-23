@@ -8,6 +8,7 @@ import { Hero, HeroContent, LeftSection, Content, RightSection } from '../styles
 import image1 from '../public/images/team_work.png'
 import image2 from '../public/images/analytics.png'
 import Plans from '../components/Plans/Plans';
+import Servcies from '../components/Services/Services';
 
 const Home = () => {
 
@@ -63,6 +64,7 @@ const Home = () => {
                 />
             </Hero>
             <Plans/>
+            <Servcies/>
         </>
     );
 }
