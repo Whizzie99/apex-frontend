@@ -1,53 +1,74 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 import { ArrowRightIcon } from '@primer/octicons-react'
-import TeamIcon from './ServicesIcons/TeamIcon';
 import styled from 'styled-components'
 
-const ServiceCard = () => {
+const ServiceCard = ({icon, title, description}) => {
     return (
-        <Wrapper>
-            <Container>
-                <Card>
-                    <CardIcon>
-                        <TeamIcon/>
-                    </CardIcon>
-                    <Content>
-                        <Title>Expert service</Title>
-                        <Description>
-                            Our experts are trained professionals and pronouncely master the art of profit making with ethics
-                        </Description>
-                        <Link href="#">
-                            <a>learn more <ArrowRightIcon/></a>
-                        </Link>
-                    </Content>
-                </Card>
-            </Container>
-        </Wrapper>
+        <Card>
+            {icon}
+            <Content>
+                <Title>{title}</Title>
+                <Description>
+                    {description}
+                </Description>
+                <Link href="#">
+                    <a>learn more <ArrowRightIcon/></a>
+                </Link>
+            </Content>
+        </Card>
     );
 }
 
 export default ServiceCard;
 
 
-const  Wrapper = styled.div`
-    padding: 50px 0;
-` 
+// PROPTYPES
+ServiceCard.prototypes = {
+    icon: PropTypes.element.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+}
 
-const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
-`
 
+// STYLES
 const Card = styled.div`
     display: flex;
+
+    > svg{
+        height: 120px;
+        width: 120px;
+    }
 `
 
-const CardIcon = styled.div`
-    margin-right: 10px;
+const Content = styled.div`
+    a{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: var(--grey);
+        margin-top: 10px;
+        transition: all .3s ease;
+
+        :hover{
+            color: var(--light-green);
+        }
+
+        svg{
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    }
 `
 
-const Content = styled.div``
+const Title = styled.h3`
+    font-size: 1.7em;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+`
 
-const Title = styled.h4``
-
-const Description = styled.p``
+const Description = styled.p`
+    color: var(--grey);
+`

@@ -5,11 +5,6 @@ export const Wrapper = styled.div`
     padding: 0.9em;
 `
 
-export const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
-`
-
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;

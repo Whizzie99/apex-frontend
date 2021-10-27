@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Container } from '../Navbar/styles';
+import Container from '../Container/Container';
 import {ChevronRightIcon} from '@primer/octicons-react';
 import { plans } from './data/data';
 import PlanCard from './PlanCard';

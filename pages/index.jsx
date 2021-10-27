@@ -9,6 +9,9 @@ import image1 from '../public/images/team_work.png'
 import image2 from '../public/images/analytics.png'
 import Plans from '../components/Plans/Plans';
 import Servcies from '../components/Services/Services';
+import SimpleSteps from '../components/SimpleSteps/SimplesSteps';
+import Awards from '../components/Awards/Awards';
+import PaymentMethods from '../components/PaymentMethods/PaymentMethods';
 
 const Home = () => {
 
@@ -65,6 +68,9 @@ const Home = () => {
             </Hero>
             <Plans/>
             <Servcies/>
+            <SimpleSteps/>
+            <Awards/>
+            <PaymentMethods/>
         </>
     );
 }

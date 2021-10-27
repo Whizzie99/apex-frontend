@@ -1,6 +1,15 @@
+import Container from '../Container/Container'
+import { Wrapper, TopSection } from './styles';
+
 const Footer = () => {
     return (
-        <div>footer</div>
+        <Wrapper>
+            <Container>
+                <TopSection>
+
+                </TopSection>
+            </Container>
+        </Wrapper>
     );
 }
  

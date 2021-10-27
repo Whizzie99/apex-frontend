@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import {PersonFillIcon} from '@primer/octicons-react'
+import Container from '../Container/Container';
 
-import { Wrapper, Container, Nav, Logo, NavListSection, NavItems, AuthSection, CreateAccountBtn, SignInButton } from './styles';
+import { Wrapper, Nav, Logo, NavListSection, NavItems, AuthSection, CreateAccountBtn, SignInButton } from './styles';
 
 import logo from '../../public/images/logo.png'
 
