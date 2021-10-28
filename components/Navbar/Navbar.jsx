@@ -1,16 +1,20 @@
-import Link from 'next/link'
 import Image from 'next/image'
-// import {PersonFillIcon} from '@primer/octicons-react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import useMatchMedia from '../../Hooks/useMatchMedia'
 import Container from '../Container/Container';
+import DesktopMenu from './DesktopMenu/DesktopMenu';
+import MobileMenu from './MobileMenu/MobileMenu';
 
-import { Wrapper, Nav, Logo, NavListSection, NavItems, AuthSection, CreateAccountBtn, SignInButton } from './styles';
+import { Wrapper, Nav, Logo, NavListSection} from './styles';
 
 import logo from '../../public/images/logo.png'
 
 
 
 const Navbar = () => {
+
+    const isDesktopScreen = useMatchMedia('(min-width: 1200px)', true)
+    const isMobileScreen = useMatchMedia('(max-width: 1199.99px)', true)
+
     return (
         <Wrapper>
             <Container>
@@ -19,42 +23,8 @@ const Navbar = () => {
                         <Image src={logo} alt="logo" layout="fill" placeholder="blur" objectFit="contain" />
                     </Logo>
                     <NavListSection>
-                        <NavItems>
-                            <li>
-                                <Link href="#">
-                                    <a>Home</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <a>Markets</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <a>Company</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    <a>Education</a>
-                                </Link>
-                            </li>
-                        </NavItems>
-                        <AuthSection>
-                            <CreateAccountBtn>
-                                <Link href="#">
-                                    <a>Create Account</a>
-                                </Link>
-                            </CreateAccountBtn>
-                            <SignInButton>
-                                <Link href="#">
-                                    <a>
-                                        <FontAwesomeIcon icon="user"/>
-                                    </a>
-                                </Link>
-                            </SignInButton>
-                        </AuthSection>
+                        {isDesktopScreen && <DesktopMenu/>}
+                        {isMobileScreen && <MobileMenu/>}
                     </NavListSection>
                 </Nav>
             </Container>

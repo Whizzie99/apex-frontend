@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Proptypes from 'prop-types'
 
 
-const PlanCard = ({title, img, price, perks }) => {
+const PlanCard = ({title, price, perks }) => {
     return (
-        <Card img={img}>
+        <Card>
             <Title>{title}</Title>
             <Perks>
                 {
@@ -23,6 +24,14 @@ const PlanCard = ({title, img, price, perks }) => {
  
 export default PlanCard;
 
+// PROPTYPES
+PlanCard.propTypes = {
+    title: Proptypes.string.isRequired,
+    price: Proptypes.string.isRequired,
+    perks: Proptypes.arrayOf(Proptypes.string).isRequired
+}
+
+// STYLES
 const Card = styled.div`
     position: relative;
     overflow: hidden;
