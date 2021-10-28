@@ -19,7 +19,7 @@ const Plans = () => {
                 <PlansSection>
                     {
                         plans.map(plan =>(
-                            <PlanCard key={plan.id} title={plan.title} img={plan.bgimg} perks={plan.perks} price={plan.price}/>
+                            <PlanCard key={plan.id} title={plan.title} perks={plan.perks} price={plan.price}/>
                         ))
                     }
                     

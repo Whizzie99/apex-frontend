@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-// import image1 from '../../public/images/currency.png'
 
 
-const PlanCard = ({title, bgimg, price, perks }) => {
+const PlanCard = ({title, img, price, perks }) => {
     return (
-        <Card img={bgimg}>
+        <Card img={img}>
             <Title>{title}</Title>
             <Perks>
                 {
@@ -41,7 +40,8 @@ const Card = styled.div`
         right: -100px;
         height: 300px;
         width: 300px;
-        background-image: url(${props => props.img});
+        background-image: url('./images/currency.png');
+        opacity: 0.9;
         background-size: cover;
         z-index: 1;
     }
@@ -74,7 +74,6 @@ const Title = styled.h4`
 const Perks = styled.ul`
     list-style: none;
     text-transform: capitalize;
-    /* margin-bottom: 30px; */
 `
 
 const Perk = styled.li`
@@ -87,4 +86,5 @@ const Price = styled.p`
     font-size: 1.5em;
     font-weight: bold;
     margin: 15px 0;
+    margin-bottom: 30px;
 `

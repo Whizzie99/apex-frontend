@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {PersonFillIcon} from '@primer/octicons-react'
+// import {PersonFillIcon} from '@primer/octicons-react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Container from '../Container/Container';
 
 import { Wrapper, Nav, Logo, NavListSection, NavItems, AuthSection, CreateAccountBtn, SignInButton } from './styles';
@@ -49,7 +50,7 @@ const Navbar = () => {
                             <SignInButton>
                                 <Link href="#">
                                     <a>
-                                        <PersonFillIcon/>
+                                        <FontAwesomeIcon icon="user"/>
                                     </a>
                                 </Link>
                             </SignInButton>

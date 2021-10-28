@@ -1,8 +1,20 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import { GlobalStyle } from '../styles/globals'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faHistory, faTrophy, faPhoneAlt, faUser} from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+config.autoAddCss = false
+library.add(fab, faHistory, faTrophy, faPhoneAlt, faUser)
+
+
 
 function MyApp({ Component, pageProps }) {
+
+  
+
   return (
     <>
     <Head>
