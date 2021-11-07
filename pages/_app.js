@@ -4,10 +4,10 @@ import { GlobalStyle } from '../styles/globals'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faHistory, faTrophy, faPhoneAlt, faUserCircle} from '@fortawesome/free-solid-svg-icons'
+import {faHistory, faTrophy, faPhoneAlt, faUserCircle, faLeaf, faHourglassEnd, faFlag} from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 config.autoAddCss = false
-library.add(fab, faHistory, faTrophy, faPhoneAlt, faUserCircle)
+library.add(fab, faHistory, faTrophy, faPhoneAlt, faUserCircle, faLeaf, faHourglassEnd, faFlag)
 
 
 
