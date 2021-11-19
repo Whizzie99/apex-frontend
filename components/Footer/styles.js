@@ -3,25 +3,37 @@ import styled from "styled-components";
 export const Wrapper = styled.div``
 
 export const TopSection = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background: var(--black);
-    padding: 20px;
+    padding: 15px;
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 `
 
 export const Grid = styled.div`
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
     color: var(--white);
-    width: 60%;
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 60%;
+    }
 `
 
 export const GridItem = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
     
+    @media(min-width: 1200px){
+        margin-bottom: 0;
+    }
 `
 
 export const Icon = styled.span`
@@ -41,10 +53,13 @@ export const BottomSection = styled.div`
 `
 
 export const FooterNav = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 0;
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 
 export const LeftSection = styled.div``
@@ -60,11 +75,15 @@ export const Logo = styled.div`
 `
 
 export const RightSection = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 0.45;
-    padding: 20px 0;
+    display: none;
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0.45;
+        padding: 20px 0;
+    }
 `
 
 export const Socials = styled.div`
@@ -92,10 +111,13 @@ export const Secondarylinks = styled.div`
 `
 
 export const FooterLinks = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
     margin: 30px 0;
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
 ` 
 export const CopyRight = styled.p`
     text-align: center;

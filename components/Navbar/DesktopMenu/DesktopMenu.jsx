@@ -48,14 +48,23 @@ const NavItems = styled.ul`
 
         a{
             text-decoration: none;
+            text-transform: capitalize;
             color: var(--white);
+            font-size: 1.1em;
+            font-weight: bold;
             text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        a:hover{
+            color: var(--light-green);
         }
     }
 `
 
 const AuthSection = styled.div`
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
 `
 

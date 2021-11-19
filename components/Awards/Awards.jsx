@@ -68,13 +68,26 @@ const Section = styled.div`
 
 const AwardsGrid = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    /* width: 100%; */
+
+    @media(min-width: 1200px){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
 `
 
 const Award = styled.div`
     text-align: center;
+    margin-bottom: 10px;
+
+    @media(min-width: 1200px){
+        margin-bottom: 0;
+    }
 `
 
 const Icon = styled.span`

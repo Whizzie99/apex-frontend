@@ -61,7 +61,7 @@ const StyledHeroSection = styled.div`
     margin-top: 60px;
 
     h2{
-        font-size: 2.5em;
+        font-size: 2em;
         text-transform: capitalize;
     }
 
@@ -71,20 +71,35 @@ const StyledHeroSection = styled.div`
 
     p{
         color: var(--grey);
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: 10px 0;
+    }
+
+    @media(min-width: 1200px){
+        h2{
+            font-size: 2.5em;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
     }
 `
 
 const StyledFeaturesSection = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     margin: 50px 0;
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 50px 0;
+    }
 `
 
 const StyledFeature = styled.div`
     display: flex;
+    margin-bottom: 10px;
 
     span{
         display: flex;
@@ -97,6 +112,10 @@ const StyledFeature = styled.div`
         border-radius: 50%;
         margin-right: 20px;
         flex: 15%;
+    }
+
+    @media(min-width: 1200px){
+        margin-bottom: 0;
     }
 `
 

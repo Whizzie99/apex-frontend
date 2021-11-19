@@ -14,26 +14,45 @@ export const StyledSectionTitle = styled.div`
     text-align: center;
 
     h2{
-        font-size: 2.2em;
+        font-size: 2em;
         text-transform: capitalize;
     }
 
     p{
-        font-size: 1.1em;
+        font-size: 1em;
         margin: 10px 0;
         color: var(--grey);
+    }
+
+    @media(min-width: 1200px){
+        h2{
+            font-size: 2em;
+        }
+
+        p{
+            font-size: 1.1em;
+        }
     }
 `
 
 export const StyledTeamSection = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    
     margin-top: 40px;
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 `
 
 export const StyledTeamMember = styled.div`
     display: flex;
+    margin-bottom: 10px;
+
+    @media(min-width: 1200px){
+        margin-bottom: 0;
+    }
 `
 
 export const StyledMemberImage = styled.div`

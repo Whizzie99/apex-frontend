@@ -48,7 +48,7 @@ const StyledFormSection = styled.div`
     margin-top: 30px;
     
     form{
-        width: 500px;
+        width: 100%;
         display: grid;
         grid-template-rows: 1fr;
         row-gap: 20px;
@@ -79,5 +79,11 @@ const StyledFormSection = styled.div`
             }
         }
 
+    }
+
+    @media(min-width: 1200px){
+        form{
+            width: 500px;
+        }
     }
 `

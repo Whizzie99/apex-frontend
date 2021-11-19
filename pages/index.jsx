@@ -38,8 +38,8 @@ const Home = () => {
                 <Content>
                     <h1>{carouselItem.title}</h1>
                     <p>{carouselItem.subText}</p>
-                    <Link href="#">
-                        <a>create account</a>
+                    <Link href="/about">
+                        <a>learn more</a>
                     </Link>
                 </Content>
             </LeftSection>

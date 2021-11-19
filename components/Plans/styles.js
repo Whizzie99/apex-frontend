@@ -7,13 +7,10 @@ export const Wrapper = styled.div`
 `
 
 export const SectionTitle = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 0;
 
     h2{
-        font-size: 2.3em;
+        font-size: 1.8em;
 
         span{
             color: var(--light-green);
@@ -21,7 +18,7 @@ export const SectionTitle = styled.div`
     }
 
     a{
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -37,10 +34,27 @@ export const SectionTitle = styled.div`
         background: var(--light-green);
         color: var(--white);
     }
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-size: 2.3em;
+        }
+
+        a{
+            display: flex;
+        }
+    }
 `
 
 export const PlansSection = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
 `

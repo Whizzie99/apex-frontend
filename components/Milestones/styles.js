@@ -5,8 +5,12 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledSection = styled.div`
-    display: flex;
-    width: 100%auto;
+    
+
+    @media(min-width: 1200px){
+        display: flex;
+        width: 100%;
+    }
 `
 
 export const StyledHeroText = styled.div`
@@ -14,7 +18,7 @@ export const StyledHeroText = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    
 
     h3{
         text-transform: capitalize;
@@ -26,10 +30,19 @@ export const StyledHeroText = styled.div`
         font-size: 2.2em;
         text-align: center;
     }
+
+    @media(min-width: 1200px){
+        width: 50%;
+    }
 `
 
 export const StyledMilestones = styled.div`
-    width: 50%;
+    margin-top: 20px;
+
+    @media(min-width: 1200px){
+        width: 50%;
+        margin-top: 0;
+    }
 `
 
 export const StyledMilestone = styled.div`
@@ -44,8 +57,12 @@ export const StyledCounter = styled.div`
     align-items: center;
     text-align: center;
     padding: 5px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--light-green);
+
+    @media(min-width: 1200px){
+        font-size: 1.2em;
+    }
 `
 
 export const StyledMilestoneContent = styled.div`

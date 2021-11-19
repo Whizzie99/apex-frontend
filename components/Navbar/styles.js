@@ -25,5 +25,5 @@ export const NavListSection = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0.8;
+    /* flex: 0.8; */
 `

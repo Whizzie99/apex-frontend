@@ -69,13 +69,25 @@ const Section = styled.div`
 `
 
 const PaymentTypesGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+    }
 `
 
 const PaymentType = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+
+    @media(min-width: 1200px){
+        margin-bottom: 0;
+    }
 `

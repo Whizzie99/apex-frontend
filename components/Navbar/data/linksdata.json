@@ -6,16 +6,11 @@
     },
     {
         "id": "2",
-        "path": "/market",
-        "name": "market"
-    },
-    {
-        "id": "3",
         "path": "/about",
         "name": "about"
     },
     {
-        "id": "4",
+        "id": "3",
         "path": "/contact",
         "name": "contact"
     }

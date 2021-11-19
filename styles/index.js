@@ -7,29 +7,38 @@ export const Hero = styled.div`
 `
 
 export const HeroContent = styled.div`
-    display: flex;
-    height: 90vh;
-    width: 100%;
+    
+
+    @media(min-width: 1200px){
+        display: flex;
+        height: 90vh;
+        width: 100%;
+    }
 `
 
 export const LeftSection = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 0 50px;
+    padding: 0 20px;
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 0 50px;
+    }
 `
 
 export const Content = styled.div`
 
     h1{
-        font-size: 3em;
+        font-size: 2.2em;
         font-weight: bold;
         text-transform: capitalize;
         color: var(--white);
     }
 
     p{
+        display: none;
         margin: 10px 0;
         margin-bottom: 30px;
         font-size: 1.2em;
@@ -37,6 +46,7 @@ export const Content = styled.div`
     }
 
     a{
+        display: none;
         padding: 10px;
         text-decoration: none;
         border: 2px solid var(--light-green);
@@ -51,6 +61,20 @@ export const Content = styled.div`
         color: var(--white);
     }
 
+    @media(min-width: 1200px){
+
+        h1{
+            font-size: 3em;
+        }
+        p{
+            display: block;
+        }
+
+        a{
+            display: inline;
+        }
+    }
+
 `
 
 export const RightSection = styled.div`
@@ -58,10 +82,14 @@ export const RightSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    
 
     & img{
         width: 400px;
         height: 400px;
+    }
+
+    @media(min-width: 1200px){
+        width: 50%;
     }
 `

@@ -30,17 +30,27 @@ export const Title = styled.h3`
 
 export const Steps = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
     margin-bottom: 40px;
     width: 95%;
+
+    @media(min-width: 1200px){
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 `
 
 export const Step = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+
+    @media(min-width: 1200px){
+        margin-bottom: 10px;
+    }
 `
 
 export const Count = styled.span`
@@ -50,7 +60,11 @@ export const Count = styled.span`
     border: 3px solid var(--light-green);
     border-radius: 50%;
     padding: 10px 17px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    @media(min-width: 1200px){
+        margin-bottom: 20px;
+    }
 `
 
 export const Description = styled.p`

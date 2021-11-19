@@ -41,6 +41,7 @@ const Card = styled.div`
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
+    margin-bottom: 20px;
 
     &::after{
         content: '';
@@ -68,6 +69,10 @@ const Card = styled.div`
     a:hover{
         background: var(--light-green);
         color: var(--white);
+    }
+
+    @media(min-width: 1200px){
+        margin-bottom: 0;
     }
 `
 

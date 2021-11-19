@@ -34,6 +34,7 @@ ServiceCard.prototypes = {
 // STYLES
 const Card = styled.div`
     display: flex;
+    margin-bottom: 20px;
 
     > svg{
         height: 120px;
@@ -64,9 +65,13 @@ const Content = styled.div`
 `
 
 const Title = styled.h3`
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-transform: capitalize;
     margin-bottom: 15px;
+
+    @media(min-width: 1200px){
+        font-size: 1.7em;
+    }
 `
 
 const Description = styled.p`
