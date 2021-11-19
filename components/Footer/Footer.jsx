@@ -79,7 +79,7 @@ const Footer = () => {
                     <FooterLinks>
                         {
                             footerLinks.map(footerLink => (
-                                <FooterLink id={footerLink.id} title={footerLink.title} links={footerLink.links}/>
+                                <FooterLink key={footerLink.id} title={footerLink.title} links={footerLink.links}/>
                             ))
                         }
                     </FooterLinks>

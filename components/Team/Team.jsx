@@ -10,7 +10,7 @@ const Team = () => {
         <StyledWrapper>
             <Container>
                 <StyledSectionTitle>
-                    <h2>Trust the professionals</h2>
+                    <h2>Meet the team</h2>
                     <p>We are a group of passionate, independent thinkers who never stop exploring new ways to improve trading for the self-directed investor.</p>
                 </StyledSectionTitle>
 

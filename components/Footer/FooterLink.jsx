@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styled from "styled-components";
 import PropTypes from 'prop-types'
+import { v4 as uuidv4 } from 'uuid';
 
 const FooterLink = ({title, links}) => {
     return (
@@ -9,7 +10,7 @@ const FooterLink = ({title, links}) => {
             <ul>
                 {
                     links.map(link =>(
-                        <li key={links.indexOf(link) + 1}>
+                        <li key={uuidv4()}>
                             <Link href="#">
                                 <a >{link}</a>
                             </Link>

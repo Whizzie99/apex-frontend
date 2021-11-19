@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Container from "../components/Container/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Team from "../components/Team/Team";
+import Milestones from "../components/Milestones/Milestones";
 
 const About = () => {
     return (  
@@ -44,6 +45,7 @@ const About = () => {
                     </StyledFeature>
                 </StyledFeaturesSection>
                 <Team/>
+                <Milestones/>
             </Container>
         </StyledWrapper>
     );
