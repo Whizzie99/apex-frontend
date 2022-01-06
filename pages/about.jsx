@@ -20,7 +20,7 @@ const About = () => {
                         </span>
                         <StyledFeatureContent>
                             <h3>philosophy</h3>
-                            <p>Our trading philosophy covers the basics of the stock market exchange. Our broker is dedicated to equity.</p>
+                            <p>Tempor orci dapibus ultrices in iaculis nunc sed. Ac tincidunt vitae semper quis lectus nulla at. Molestie at elementum eu facilisis sed odio morbi quis.</p>
                         </StyledFeatureContent>
                     </StyledFeature>
 
@@ -30,7 +30,7 @@ const About = () => {
                         </span>
                         <StyledFeatureContent>
                             <h3>history</h3>
-                            <p>Profitabletradex has its long history right from Monee Meta 5. In the last couple of years we have been remained dedicated.</p>
+                            <p>Tempor orci dapibus ultrices in iaculis nunc sed. Ac tincidunt vitae semper quis lectus nulla at. Molestie at elementum eu facilisis sed odio morbi quis.</p>
                         </StyledFeatureContent>
                     </StyledFeature>
 
@@ -40,7 +40,7 @@ const About = () => {
                         </span>
                         <StyledFeatureContent>
                             <h3>culture</h3>
-                            <p>Making profit from understanding the current trends of the stock market is prioritized from day one.</p>
+                            <p>Tempor orci dapibus ultrices in iaculis nunc sed. Ac tincidunt vitae semper quis lectus nulla at. Molestie at elementum eu facilisis sed odio morbi quis.</p>
                         </StyledFeatureContent>
                     </StyledFeature>
                 </StyledFeaturesSection>

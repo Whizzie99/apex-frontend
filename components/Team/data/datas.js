@@ -29,7 +29,7 @@ export const teamMembers = [
         "id": 4,
         "position": "human resources",
         "name": "bryan greene",
-        "comments": "Our trade academy is opened to every single person willing to hop into the stock market to make profit.",
+        "comments": "Our academy is opened to every single person willing to hop into the market to make profit.",
         "image": person4
     },
 ]

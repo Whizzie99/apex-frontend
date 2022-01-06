@@ -16,7 +16,7 @@ const PlanCard = ({title, price, perks }) => {
             </Perks>
             <Price>{price}</Price>
             <Link href="#">
-                <a >invest now</a>
+                <a>learn more</a>
             </Link>
         </Card>
     );

@@ -85,7 +85,7 @@ const Footer = () => {
                     </FooterLinks>
                     <CopyRight>copyright &copy; {todaysDate} Apex Investments Inc. All rights reserved.</CopyRight>
                     <Disclaimer>
-                        Trading cryptocurrencies and leveraged products carries some level of risk, including the risk of losing substantially more than your initial investment. It is not suitable for everyone. Before you make any decision in relation to a financial product you should obtain advice from one of our social media agents concerning our Product Disclosure Statement (PDS) and Financial Services Guide (FSG) available on our website.
+                        Quisque non tellus orci ac. Etiam erat velit scelerisque in dictum non consectetur. Scelerisque varius morbi enim nunc faucibus a. In tellus integer feugiat scelerisque varius morbi. Urna duis convallis convallis tellus id interdum velit. Facilisi nullam vehicula ipsum a arcu cursus.Tellus mauris a diam maecenas sed enim ut. Curabitur vitae nunc sed velit. Scelerisque varius morbi enim nunc faucibus a pellentesque. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla.
                     </Disclaimer>
                 </Container>
             </BottomSection>

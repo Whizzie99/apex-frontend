@@ -7,25 +7,25 @@ export const services = [
     {
         "id": 1,
         "title": "Expert service",
-        "description": "Our experts are trained professionals and pronouncely master the art of profit making with ethics.",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "icon": <TeamIcon/>
     },
     {
         "id": 2,
         "title": "Fully regulated",
-        "description": "Our platform offers trusted and reliable trades. We are regulated by and authorised by FCA, ASIC & FSCA.",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "icon": <LawIcon/>
     },
     {
         "id": 3,
         "title": "Financial strength",
-        "description": "We are a broker and an organization funded by a community of elite group and our financial strength is over-yielding.",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "icon": <TrendIcon/>
     },
     {
         "id": 4,
         "title": "Integrated support",
-        "description": "Our support is integrated and human replies are initiated once enquiries are made or our support is contacted.",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "icon": <PipsIcon/>
     }
 ]

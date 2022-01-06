@@ -3,25 +3,25 @@ export const plans = [
     {
         "id": 1,
         "title": "bronze",
-        "perks": ["Return 6%", "every week", "for 5 weeks", "total 30% + capital"],
+        "perks": ["lorem", "ipsum", "enim ad", "officia deserunt"],
         "price": "$500"
     },
     {
         "id": 2,
         "title": "silver",
-        "perks": ["Return 0.2%", "every day", "for life time", "life time earning"],
+        "perks": ["lorem", "ipsum", "enim ad", "officia deserunt"],
         "price": "$3000"
     },
     {
         "id": 3,
         "title": "gold",
-        "perks": ["Return 5%", "every week", "for 40 weeks", "total 200%"],
+        "perks": ["lorem", "ipsum", "enim ad", "officia deserunt"],
         "price": "$5000"
     },
     {
         "id": 4,
         "title": "platinum",
-        "perks": ["Return 5%", "every day", "for 25 days", "total 125%"],
+        "perks": ["lorem", "ipsum", "enim ad", "officia deserunt"],
         "price": "$10000"
     }
 ]

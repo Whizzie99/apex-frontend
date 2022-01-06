@@ -1,22 +1,22 @@
 export const footerLinks =[
     {
         "id": 1,
-        "title": "markets",
-        "links": ["Share CFDs", "Forex", "Indices", "Commodities"]
+        "title": "home",
+        "links": ["ullamco laboris", "ullamco laboris", "ullamco laboris", "ullamco laboris"]
     },
     {
         "id": 2,
-        "title": "trading platforms",
-        "links": ["web platform", "trading apps", "metatrader 5", "compare features"]
+        "title": "about",
+        "links": ["ullamco laboris", "ullamco laboris", "ullamco laboris", "ullamco laboris"]
     },
     {
         "id": 3,
-        "title": "account types",
-        "links": ["demo account", "standard", "ECN account", "islamic account"]
+        "title": "contact us",
+        "links": ["ullamco laboris", "ullamco laboris", "ullamco laboris", "ullamco laboris"]
     },
     {
         "id": 4,
-        "title": "learn to trade",
-        "links": ["News and trade ideas", "Trading strategy", "Forex trading course"]
+        "title": "FAQs",
+        "links": ["ullamco laboris", "ullamco laboris", "ullamco laboris", "ullamco laboris"]
     }
 ]

@@ -21,13 +21,13 @@ const Home = () => {
         {
             id: 1,
             title: 'New standard stock broker.',
-            subText: 'Trade forex, cryptocurrencies, synthetic and stock indices from a single account.',
+            subText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
             image: image1
         },
         {
             id: 2,
             title: 'Multi-regulated global broker.',
-            subText: 'A trusted destination for traders worldwide, Authorised by FCA, ASIC & FSCA',
+            subText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
             image: image2
         }
     ]

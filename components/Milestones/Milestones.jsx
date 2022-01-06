@@ -18,8 +18,8 @@ const Milestones = () => {
                                 {/* <CountUp end={213}/> */}
                             </StyledCounter>
                             <StyledMilestoneContent>
-                                <h3>trading instruments</h3>
-                                <p>Our trading instruments include the demo account which is funded with $1,000 for anyone to learn the basis and the meta4,5 apps</p>
+                                <h3>crafted features</h3>
+                                <p>Ut lectus arcu bibendum at varius vel pharetra vel. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat.</p>
                             </StyledMilestoneContent>
                         </StyledMilestone>
                         <StyledMilestone>
@@ -29,7 +29,7 @@ const Milestones = () => {
                             </StyledCounter>
                             <StyledMilestoneContent>
                                 <h3>countries covered</h3>
-                                <p>We have successfully covered a few countries from North American continent, Africa, Asia and Europe.</p>
+                                <p>Ut lectus arcu bibendum at varius vel pharetra vel. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat.</p>
                             </StyledMilestoneContent>
                         </StyledMilestone>
                     </StyledMilestones>
