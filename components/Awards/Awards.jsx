@@ -12,7 +12,7 @@ const Awards = () => {
                             <Icon>
                                 <AwardIcon/>
                             </Icon>
-                            <Title>Best CFD Broker</Title>
+                            <Title>culpa qui officia</Title>
                             <Description>
                                 TradeON Summit 2020
                             </Description>
@@ -22,7 +22,7 @@ const Awards = () => {
                             <Icon>
                                 <AwardIcon/>
                             </Icon>
-                            <Title>Best Execution Broker</Title>
+                            <Title>culpa qui officia</Title>
                             <Description>
                                 Forex EXPO Dubai 2020
                             </Description>
@@ -32,7 +32,7 @@ const Awards = () => {
                             <Icon>
                                 <AwardIcon/>
                             </Icon>
-                            <Title>Best Trading Platform</Title>
+                            <Title>culpa qui officia</Title>
                             <Description>
                                 London Summit 2020
                             </Description>
@@ -42,7 +42,7 @@ const Awards = () => {
                             <Icon>
                                 <AwardIcon/>
                             </Icon>
-                            <Title>Best Trading Platform</Title>
+                            <Title>culpa qui officia</Title>
                             <Description>
                                 London Summit 2020
                             </Description>
@@ -94,6 +94,7 @@ const Icon = styled.span`
 `
 
 const Title = styled.h4`
+    text-transform: capitalize;
     font-weight: bold;
 `
 

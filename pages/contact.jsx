@@ -1,7 +1,46 @@
+import { useForm } from 'react-hook-form';
+// import { ErrorMessage } from '@hookform/error-message'
+import axios from 'axios'
 import styled from "styled-components";
 import Container from "../components/Container/Container";
 
 const Contact = () => {
+
+    const {register, handleSubmit, reset, formState: {errors}} = useForm();
+    const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+
+    async function onSubmitForm(values){
+        let config = {
+            method: 'post',
+            url: `${process.env.NEXT_PUBLIC_URL}`,
+            header: {
+                'Content-Type': 'application/json'
+            },
+            data: values,
+        }
+
+        try{
+            const response = await axios(config);
+            console.log(response);
+            if(response.status && response.data.status == 200){
+                reset({
+                    values:{
+                        name: '',
+                        email: '',
+                        message: ''
+                    }
+                })
+                console.log('success'); 
+            }
+            
+        } catch (err){
+            console.log(err)
+        }
+        
+
+        console.log(values)
+    }
+    
     return (
         <StyledWrapper>
             <Container>
@@ -10,11 +49,27 @@ const Contact = () => {
                     <p>Want to get in touch? We'd love to hear from you</p>
                 </StyledHeroSection>
                 <StyledFormSection>
-                    <form>
-                        <input type="text" placeholder="name" />
-                        <input type="email" placeholder="email" />
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button>submit</button>
+                    <form onSubmit={handleSubmit(onSubmitForm)}>
+                        <input type="text" {...register("name",{required: true})} placeholder="name" />
+                        {errors.name && <span>this field is required</span>}
+
+                        <input
+                            type="email" 
+                            {...register("email", 
+                                {
+                                    required: 'This field is required',
+                                    pattern: {
+                                        value: emailRegEx,
+                                        message: 'enter a valid email address'
+                                    }
+                                }
+                            )} 
+                            placeholder="email" />
+                        {errors.email && <span>{errors.email.message}</span>}
+
+                        <textarea {...register("message")} cols="30" rows="10"></textarea>
+                        {errors.message && <span>this field is required</span>}
+                        <button type="submit">submit</button>
                     </form>
                 </StyledFormSection>
             </Container>

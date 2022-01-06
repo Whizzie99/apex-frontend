@@ -8,7 +8,7 @@ const SimpleSteps = () => {
             <Container>
                 <StepsSection>
                     <Content>
-                        <Title>Simple steps to start trade</Title>
+                        <Title>Get started in three steps</Title>
                         <Steps>
                             <Step>
                                 <Count>1</Count>
@@ -16,11 +16,11 @@ const SimpleSteps = () => {
                             </Step>
                             <Step>
                                 <Count>2</Count>
-                                <Description>fund your account</Description>
+                                <Description>verify your account</Description>
                             </Step>
                             <Step>
                                 <Count>3</Count>
-                                <Description>start trade</Description>
+                                <Description>you're good to go</Description>
                             </Step>
                         </Steps>
                     </Content>

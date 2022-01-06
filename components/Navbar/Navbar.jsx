@@ -7,6 +7,7 @@ import MobileMenu from './MobileMenu/MobileMenu';
 import { Wrapper, Nav, Logo, NavListSection} from './styles';
 
 import logo from '../../public/images/logo.png'
+import { useEffect } from 'react';
 
 
 
@@ -14,6 +15,7 @@ const Navbar = () => {
 
     const isDesktopScreen = useMatchMedia('(min-width: 1200px)', true)
     const isMobileScreen = useMatchMedia('(max-width: 1199.99px)', true)
+    
 
     return (
         <Wrapper>
