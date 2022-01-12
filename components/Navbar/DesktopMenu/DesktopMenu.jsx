@@ -5,7 +5,7 @@ import linksdata from '../data/linksdata.json'
 
 const DesktopMenu = () => {
     return (
-        <>
+        <StyledWrapper>
             <NavItems>
                 {
                     linksdata.map(linkdata => (
@@ -31,11 +31,20 @@ const DesktopMenu = () => {
                     </Link>
                 </SignInButton>
             </AuthSection>
-        </>
+        </StyledWrapper>
     );
 }
  
 export default DesktopMenu;
+
+
+const StyledWrapper = styled.div`
+    display: none;
+
+    @media(min-width: 1200px){
+        display: block;
+    }
+`
 
 const NavItems = styled.ul`
     display: flex;
